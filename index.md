@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+<?php include('include/header_accueil.php');?>
+<?php include('connect_db.php');?>
+<?php include('config_variable.php') ?>
 
-You can use the [editor on GitHub](https://github.com/BoucaudThomas/AppliDeGestion/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+  
+<!--CONTENU DE LA PAGE-->
+<div class="container" id="content">
+            <div class="row">
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="container" id="content">
+            <div class="row">
+                <div class="col-md-2">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+                </div>
+                <div class="col-md-8">
+                    <h2><?php echo($page_index_titre); ?></h2>
+                    <br>
+                </div>
+                <div class="col-md-2">
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BoucaudThomas/AppliDeGestion/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+                </div>
+            </div>
+        </div>
+        <div class="container" id="content">
+            <br>
+            <img src="assets/ACCUEIL.JPG" alt="image_accueil" id="img_accueil">
+            <br>
+            <br>
+            <center><p><?php echo($page_index_sous_titre); ?></p></center>
+            <br>
+            <img src="assets/fleur_logo.png" alt="fleur_logo">
+            <br>
+            <br>
+        </div>
+        
+    </div>
+    
+<?php
+include("include/footer.php");
+    
+?>
